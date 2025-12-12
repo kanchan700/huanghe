@@ -1,0 +1,75 @@
+.lt2-shell {
+  min-height: 100vh;
+  background: #f8f7f4;
+  color: #111;
+  padding: 36px 24px 64px;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.lt2-hero {
+  max-width: 1080px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lt2-search {
+  max-width: 420px;
+}
+
+.lt2-search input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e5e1d8;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lt2-search input:focus {
+  outline: none;
+  border-color: #7a5af8;
+  box-shadow: 0 0 0 3px rgba(122, 90, 248, 0.12);
+}
+
+.lt2-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.lt2-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.lt2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.gallery-empty {
+  padding: 80px 20px;
+  text-align: center;
+  color: #6b655c;
+  font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .lt2-shell {
+    padding: 28px 16px 48px;
+  }
+
+  .lt2-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
