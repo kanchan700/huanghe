@@ -1,0 +1,96 @@
+.post-card {
+  background: #fff;
+  border: 1px solid #e5e1d8;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post-card:hover {
+  border-color: #7a5af8;
+  box-shadow: 0 4px 12px rgba(122, 90, 248, 0.1);
+  transform: translateY(-2px);
+}
+
+.post-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.post-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.post-lock-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.post-diary-badge {
+  background: #f0f0f0;
+  color: #666;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.post-card-excerpt {
+  color: #6b655c;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #999;
+  margin-top: auto;
+}
+
+.post-card-date {
+  color: #999;
+}
+
+.post-card-category {
+  color: #7a5af8;
+  font-weight: 500;
+}
+
+.post-card-author {
+  color: #666;
+}
+
+@media (max-width: 720px) {
+  .post-card {
+    padding: 18px;
+  }
+
+  .post-card-title {
+    font-size: 16px;
+  }
+
+  .post-card-footer {
+    font-size: 12px;
+    gap: 8px;
+  }
+}

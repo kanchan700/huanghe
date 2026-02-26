@@ -1,0 +1,133 @@
+.blog-shell {
+  min-height: 100vh;
+  background: #f8f7f4;
+  color: #111;
+  padding: 36px 24px 64px;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.blog-hero {
+  max-width: 1080px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.blog-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  text-align: center;
+}
+
+.blog-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+
+.blog-search {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.blog-search input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e5e1d8;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-search input:focus {
+  outline: none;
+  border-color: #7a5af8;
+  box-shadow: 0 0 0 3px rgba(122, 90, 248, 0.12);
+}
+
+.blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border: 1px solid #e5e1d8;
+  border-radius: 20px;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-btn:hover {
+  border-color: #7a5af8;
+  color: #7a5af8;
+}
+
+.category-btn.active {
+  background: #7a5af8;
+  color: #fff;
+  border-color: #7a5af8;
+}
+
+.blog-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.blog-empty {
+  padding: 80px 20px;
+  text-align: center;
+  color: #6b655c;
+  font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .blog-shell {
+    padding: 28px 16px 48px;
+  }
+
+  .blog-title {
+    font-size: 28px;
+  }
+
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-categories {
+    gap: 6px;
+  }
+
+  .category-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
